@@ -1,78 +1,245 @@
 <!DOCTYPE html>
-<html lang="en" >
-    <head>
-        <meta charset= "UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Appliance Energy Consumption</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <header>
         <nav class="navbar">
 
-            <a href="index.html" class="logo">
-                <img src="assets/img/PowerIcon.png" alt="Power Energy Logo">
+            <!-- Logo -->
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/PowerIcon.png"
+                     alt="Appliance Energy Consumption Home"
+                     class="logo">
             </a>
 
-            <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="televisions.html">Televisions</a>
-                <a href="about.html">About Us</a>
-            </div>
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="televisions.html">Televisions</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+            </ul>
 
         </nav>
     </header>
 
+
+    <!-- Main Content -->
     <main>
 
+        <!-- Hero Section -->
         <section class="hero">
-            <h1>Appliance Energy Consumption Website</h1>
 
-            <p>
-                Learn about household appliance energy consumption
-                and how electricity usage can affect energy costs.
-            </p>
+            <div class="hero-content">
+
+                <h1>Appliance Energy Consumption</h1>
+
+                <p>
+                    Understanding how much energy household appliances
+                    consume can help Australian consumers make smarter
+                    and more sustainable choices.
+                </p>
+
+                <a href="televisions.html" class="button">
+                    Explore Televisions
+                </a>
+
+            </div>
+
         </section>
 
 
+        <!-- Introduction -->
         <section class="content-section">
 
-            <h2>Appliance Energy Consumption in Australia</h2>
+            <h2>Energy Consumption in Australia</h2>
 
             <p>
                 Household appliances are an important part of everyday
-                life in Australia. Appliances such as televisions,
-                refrigerators, washing machines and air conditioners
-                consume electricity when they are operating.
+                life. From televisions and refrigerators to washing
+                machines and air conditioners, appliances use electricity
+                every day.
             </p>
 
             <p>
-                Understanding how much energy appliances use can help
-                households make better decisions about their electricity
-                consumption and potentially reduce their energy costs.
+                Understanding appliance energy consumption can help
+                households manage electricity costs and reduce unnecessary
+                energy use.
             </p>
 
         </section>
 
 
-        <section class="faq">
+        <!-- Energy Tips -->
+        <section class="content-section">
+
+            <h2>Energy Saving Tips</h2>
+
+            <div class="card-container">
+
+                <article class="card">
+                    <h3>Choose Efficient Appliances</h3>
+
+                    <p>
+                        Look for appliances with good energy efficiency
+                        ratings when purchasing new equipment.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <h3>Reduce Standby Power</h3>
+
+                    <p>
+                        Switch appliances off at the power point when they
+                        are not being used for long periods.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <h3>Monitor Usage</h3>
+
+                    <p>
+                        Understanding how frequently appliances are used
+                        can help households identify opportunities to
+                        reduce electricity consumption.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Calculator -->
+        <section class="calculator-section">
+
+            <h2>Appliance Energy Calculator</h2>
+
+            <p>
+                Estimate the electricity consumption and cost of an
+                appliance based on its power usage and daily usage.
+            </p>
+
+
+            <form id="energyCalculator">
+
+                <div class="form-group">
+
+                    <label for="power">
+                        Appliance Power (Watts)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="power"
+                        name="power"
+                        min="1"
+                        step="1"
+                        placeholder="Example: 100"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="hours">
+                        Average Hours Used Per Day
+                    </label>
+
+                    <input
+                        type="number"
+                        id="hours"
+                        name="hours"
+                        min="0"
+                        max="24"
+                        step="0.5"
+                        placeholder="Example: 5"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="price">
+                        Electricity Price (cents per kWh)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="price"
+                        name="price"
+                        min="0"
+                        step="0.01"
+                        placeholder="Example: 30"
+                    >
+
+                </div>
+
+
+                <button type="submit" class="button">
+                    Calculate
+                </button>
+
+            </form>
+
+
+            <!-- Results -->
+            <div id="calculatorResults" class="results" aria-live="polite">
+
+                <h3>Results</h3>
+
+                <p>
+                    Enter your appliance information above and click
+                    "Calculate".
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FAQ -->
+        <section class="faq-section">
 
             <h2>Frequently Asked Questions</h2>
 
+
             <div class="faq-item">
 
                 <button class="faq-question">
-                    What is appliance energy consumption?
+                    Why is appliance energy consumption important?
+                    <span>+</span>
                 </button>
 
                 <div class="faq-answer">
+
                     <p>
-                        Appliance energy consumption refers to the amount
-                        of electrical energy used by an appliance while
-                        it is operating.
+                        Understanding energy consumption can help
+                        households manage electricity costs and reduce
+                        unnecessary energy usage.
                     </p>
+
                 </div>
 
             </div>
@@ -81,15 +248,19 @@
             <div class="faq-item">
 
                 <button class="faq-question">
-                    Why is energy consumption important?
+                    Does a larger appliance always use more electricity?
+                    <span>+</span>
                 </button>
 
                 <div class="faq-answer">
+
                     <p>
-                        Understanding energy consumption can help households
-                        manage electricity usage and make more energy-efficient
-                        choices.
+                        Not necessarily. Energy consumption can depend on
+                        several factors including appliance technology,
+                        efficiency, settings and how long the appliance
+                        operates.
                     </p>
+
                 </div>
 
             </div>
@@ -98,15 +269,19 @@
             <div class="faq-item">
 
                 <button class="faq-question">
-                    Which appliances use the most electricity?
+                    How can I reduce my electricity consumption?
+                    <span>+</span>
                 </button>
 
                 <div class="faq-answer">
+
                     <p>
-                        Appliances with high power requirements or appliances
-                        that operate for long periods can consume significant
-                        amounts of electricity.
+                        You can reduce electricity usage by choosing
+                        energy-efficient appliances, avoiding unnecessary
+                        use and switching appliances off when they are not
+                        required.
                     </p>
+
                 </div>
 
             </div>
@@ -116,17 +291,18 @@
     </main>
 
 
+    <!-- Footer -->
     <footer>
 
         <p>
-            &copy; 2026 Prit Vinesh Kumar
+            &copy; <span id="currentYear"></span>
+            Prit Vinesh Kumar
         </p>
 
         <p>
             Generative AI acknowledgement:
-            Generative AI was used to assist with learning and developing
-            this website. All generated code was reviewed and understood
-            by the author.
+            ChatGPT was used to assist with website structure,
+            code development and debugging.
         </p>
 
     </footer>

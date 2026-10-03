@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Appliance Energy Consumption</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/PowerIcon.png"
+                     alt="Appliance Energy Consumption Home"
+                     class="logo">
+            </a>
+
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="televisions.html">Televisions</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>Appliance Energy Consumption</h1>
+
+                <p>
+                    Understanding how much energy household appliances
+                    consume can help Australian consumers make smarter
+                    and more sustainable choices.
+                </p>
+
+                <a href="televisions.html" class="button">
+                    Explore Televisions
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Introduction -->
+        <section class="content-section">
+
+            <h2>Energy Consumption in Australia</h2>
+
+            <p>
+                Household appliances are an important part of everyday
+                life. From televisions and refrigerators to washing
+                machines and air conditioners, appliances use electricity
+                every day.
+            </p>
+
+            <p>
+                Understanding appliance energy consumption can help
+                households manage electricity costs and reduce unnecessary
+                energy use.
+            </p>
+
+        </section>
+
+
+        <!-- Energy Tips -->
+        <section class="content-section">
+
+            <h2>Energy Saving Tips</h2>
+
+            <div class="card-container">
+
+                <article class="card">
+                    <h3>Choose Efficient Appliances</h3>
+
+                    <p>
+                        Look for appliances with good energy efficiency
+                        ratings when purchasing new equipment.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <h3>Reduce Standby Power</h3>
+
+                    <p>
+                        Switch appliances off at the power point when they
+                        are not being used for long periods.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <h3>Monitor Usage</h3>
+
+                    <p>
+                        Understanding how frequently appliances are used
+                        can help households identify opportunities to
+                        reduce electricity consumption.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Calculator -->
+        <section class="calculator-section">
+
+            <h2>Appliance Energy Calculator</h2>
+
+            <p>
+                Estimate the electricity consumption and cost of an
+                appliance based on its power usage and daily usage.
+            </p>
+
+
+            <form id="energyCalculator">
+
+                <div class="form-group">
+
+                    <label for="power">
+                        Appliance Power (Watts)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="power"
+                        name="power"
+                        min="1"
+                        step="1"
+                        placeholder="Example: 100"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="hours">
+                        Average Hours Used Per Day
+                    </label>
+
+                    <input
+                        type="number"
+                        id="hours"
+                        name="hours"
+                        min="0"
+                        max="24"
+                        step="0.5"
+                        placeholder="Example: 5"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="price">
+                        Electricity Price (cents per kWh)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="price"
+                        name="price"
+                        min="0"
+                        step="0.01"
+                        placeholder="Example: 30"
+                    >
+
+                </div>
+
+
+                <button type="submit" class="button">
+                    Calculate
+                </button>
+
+            </form>
+
+
+            <!-- Results -->
+            <div id="calculatorResults" class="results" aria-live="polite">
+
+                <h3>Results</h3>
+
+                <p>
+                    Enter your appliance information above and click
+                    "Calculate".
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FAQ -->
+        <section class="faq-section">
+
+            <h2>Frequently Asked Questions</h2>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Why is appliance energy consumption important?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Understanding energy consumption can help
+                        households manage electricity costs and reduce
+                        unnecessary energy usage.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Does a larger appliance always use more electricity?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Not necessarily. Energy consumption can depend on
+                        several factors including appliance technology,
+                        efficiency, settings and how long the appliance
+                        operates.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    How can I reduce my electricity consumption?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        You can reduce electricity usage by choosing
+                        energy-efficient appliances, avoiding unnecessary
+                        use and switching appliances off when they are not
+                        required.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; <span id="currentYear"></span>
+            Prit Vinesh Kumar
+        </p>
+
+        <p>
+            Generative AI acknowledgement:
+            ChatGPT was used to assist with website structure,
+            code development and debugging.
+        </p>
+
+    </footer>
+
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

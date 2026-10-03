@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Televisions - Appliance Energy Consumption</title>
+
+    <title>Televisions | Appliance Energy Consumption</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <header>
+
         <nav class="navbar">
 
-            <a href="index.html" class="logo">
-                <img src="assets/img/PowerIcon.png" alt="Power Energy Logo">
+            <a href="index.html" class="logo-link">
+
+                <img
+                    src="assets/img/PowerIcon.png"
+                    alt="Appliance Energy Consumption Home"
+                    class="logo"
+                >
+
             </a>
 
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="televisions.html" class="active">Televisions</a>
-                <a href="about.html">About Us</a>
-            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="televisions.html" class="active">
+                        Televisions
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+            </ul>
 
         </nav>
+
     </header>
 
 
+    <!-- Main -->
     <main>
 
-        <section class="hero">
-            <h1>Televisions</h1>
+        <section class="page-header">
+
+            <h1>Television Energy Consumption</h1>
 
             <p>
-                Explore how televisions use electricity and learn
-                about factors that can affect their energy consumption.
-            </p>
-        </section>
-
-
-        <section class="content-section">
-
-            <h2>Television Energy Consumption</h2>
-
-            <p>
-                Televisions are common household appliances in Australia.
-                The amount of electricity a television consumes depends on
-                factors such as its screen size, display technology,
-                brightness and how long it is used each day.
-            </p>
-
-            <p>
-                Modern televisions are generally designed to use less
-                electricity than older models. However, televisions that
-                have larger screens or higher brightness settings may
-                require more power.
+                Learn how television characteristics can influence
+                electricity consumption.
             </p>
 
         </section>
@@ -61,82 +71,132 @@
 
         <section class="content-section">
 
-            <h2>Factors Affecting Energy Usage</h2>
+            <h2>Why Does Television Size Matter?</h2>
+
+            <p>
+                Television screen size is one factor that can be considered
+                when examining energy consumption. Larger screens may have
+                different energy requirements depending on the display
+                technology and television model.
+            </p>
+
+            <p>
+                Understanding these differences can help consumers make
+                informed purchasing decisions.
+            </p>
+
+        </section>
+
+
+        <!-- Television Categories -->
+        <section class="content-section">
+
+            <h2>TV Screen Size Categories</h2>
 
             <div class="card-container">
 
-                <div class="card">
-                    <h3>Screen Size</h3>
+                <article class="card">
+
+                    <h3>Small TVs</h3>
+
                     <p>
-                        Larger television screens can require more
-                        electricity to operate compared with smaller screens.
+                        TVs smaller than 43 inches.
                     </p>
-                </div>
+
+                </article>
 
 
-                <div class="card">
-                    <h3>Usage Time</h3>
+                <article class="card">
+
+                    <h3>Medium TVs</h3>
+
                     <p>
-                        A television that is used for many hours each day
-                        will generally consume more energy.
+                        TVs between 43 and 65 inches.
                     </p>
-                </div>
+
+                </article>
 
 
-                <div class="card">
-                    <h3>Display Technology</h3>
+                <article class="card">
+
+                    <h3>Large TVs</h3>
+
                     <p>
-                        Different display technologies can have different
-                        energy requirements.
+                        TVs larger than 65 inches.
                     </p>
-                </div>
 
-
-                <div class="card">
-                    <h3>Brightness</h3>
-                    <p>
-                        Higher screen brightness settings may increase
-                        the amount of electricity consumed.
-                    </p>
-                </div>
+                </article>
 
             </div>
 
         </section>
 
 
+        <!-- Data Story Placeholder -->
+        <section class="data-story">
+
+            <h2>TV Energy Data Story</h2>
+
+            <p>
+                This section can be expanded for Exercise 3 to present
+                visualisations of the TV energy consumption dataset.
+            </p>
+
+            <div class="chart-placeholder">
+
+                <p>
+                    Visualisation will be displayed here.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Consumer Tips -->
         <section class="content-section">
 
-            <h2>Reducing Television Energy Consumption</h2>
+            <h2>Tips for Choosing a Television</h2>
 
-            <p>
-                There are several simple ways to reduce television energy
-                consumption. Users can turn the television off when it is
-                not being watched and use appropriate brightness settings.
-            </p>
+            <ul class="tips-list">
 
-            <p>
-                Choosing an energy-efficient television and avoiding
-                unnecessary standby power can also help reduce overall
-                household electricity consumption.
-            </p>
+                <li>
+                    Consider the screen size you actually need.
+                </li>
+
+                <li>
+                    Compare energy efficiency information between models.
+                </li>
+
+                <li>
+                    Consider how many hours the television will be used
+                    each day.
+                </li>
+
+                <li>
+                    Avoid leaving the television running when nobody is
+                    watching.
+                </li>
+
+            </ul>
 
         </section>
 
     </main>
 
 
+    <!-- Footer -->
     <footer>
 
         <p>
-            &copy; 2026 Prit Vinesh Kumar
+            &copy; <span id="currentYear"></span>
+            Prit Vinesh Kumar
         </p>
 
         <p>
             Generative AI acknowledgement:
-            Generative AI was used to assist with learning and developing
-            this website. All generated code was reviewed and understood
-            by the author.
+            ChatGPT was used to assist with website structure,
+            code development and debugging.
         </p>
 
     </footer>

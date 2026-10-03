@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Exercise 4.1 - SVG House and Garden (Customised)</title>
+<style>
+  body { font-family: sans-serif; background: #f0f0f0; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+  svg { background: white; border: 1px solid #ccc; }
+</style>
+</head>
+<body>
+
+<h1>My SVG House and Garden</h1>
+
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- ===== SKY (rectangle) - dusk purple ===== -->
+  <rect x="0" y="0" width="800" height="420" fill="#8E7CC3" />
+
+  <!-- ===== SUN (circle) - moved to LEFT side ===== -->
+  <circle cx="100" cy="80" r="45" fill="#FF8C42" stroke="#CC5C00" stroke-width="3" />
+
+  <!-- ===== GROUND (rectangle) - dark olive green ===== -->
+  <rect x="0" y="420" width="800" height="180" fill="#6B8E23" />
+
+  <!-- ===== GARDEN PATH (path with a curve) - stone grey ===== -->
+  <path d="M 400 600 C 380 520, 420 480, 400 430"
+        stroke="#A9A9A9" stroke-width="30" fill="none" stroke-linecap="round" />
+
+  <!-- ===== TREE (single tree only) ===== -->
+  <g id="tree">
+    <rect x="110" y="360" width="20" height="70" fill="#8B5A2B" />
+    <ellipse cx="120" cy="330" rx="55" ry="45" fill="#C1440E" stroke="#7A2A08" stroke-width="2" />
+  </g>
+
+  <!-- ===== HOUSE BODY (rectangle) - blue-grey ===== -->
+  <rect x="280" y="330" width="240" height="180" fill="#5B7C99" stroke="#2E4A5E" stroke-width="3" />
+
+  <!-- ===== ROOF (path forming a triangle) - dark red ===== -->
+  <path d="M 260 330 L 400 220 L 540 330 Z"
+        fill="#7A1E1E" stroke="#4A0F0F" stroke-width="3" />
+
+  <!-- ===== CHIMNEY (rectangle) ===== -->
+  <rect x="460" y="240" width="30" height="70" fill="#7A4A28" stroke="#4A2E18" stroke-width="2" />
+
+  <!-- ===== SMOKE FROM CHIMNEY (ellipses) ===== -->
+  <ellipse cx="475" cy="210" rx="10" ry="7" fill="#DDDDDD" opacity="0.7" />
+  <ellipse cx="485" cy="185" rx="14" ry="9" fill="#DDDDDD" opacity="0.5" />
+  <ellipse cx="495" cy="155" rx="18" ry="11" fill="#DDDDDD" opacity="0.3" />
+
+  <!-- ===== DOOR (rectangle + circle for handle) - dark navy ===== -->
+  <rect x="375" y="420" width="50" height="90" fill="#1B263B" stroke="#0D1321" stroke-width="2" />
+  <circle cx="415" cy="465" r="3" fill="#FFD700" />
+
+  <!-- ===== WINDOWS (group with transform) - pale yellow ===== -->
+  <g id="windows" fill="#FFF3B0" stroke="#0D1321" stroke-width="3">
+
+    <g transform="translate(305, 355)">
+      <rect x="0" y="0" width="60" height="60" />
+      <line x1="30" y1="0" x2="30" y2="60" stroke="#0D1321" stroke-width="3" />
+      <line x1="0" y1="30" x2="60" y2="30" stroke="#0D1321" stroke-width="3" />
+    </g>
+
+    <g transform="translate(435, 355)">
+      <rect x="0" y="0" width="60" height="60" />
+      <line x1="30" y1="0" x2="30" y2="60" stroke="#0D1321" stroke-width="3" />
+      <line x1="0" y1="30" x2="60" y2="30" stroke="#0D1321" stroke-width="3" />
+    </g>
+
+  </g>
+
+  <!-- ===== FLOWERS (small circles along the path) ===== -->
+  <circle cx="360" cy="560" r="8" fill="#FF6F91" />
+  <circle cx="440" cy="570" r="8" fill="#FFC75F" />
+
+</svg>
+
+</body>
+</html>
