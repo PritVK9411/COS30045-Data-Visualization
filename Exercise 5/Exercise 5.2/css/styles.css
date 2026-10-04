@@ -1,0 +1,22 @@
+body { font-family: system-ui, sans-serif; margin: 0; color: #1c2430; }
+main { max-width: 800px; margin: auto; padding: 20px; }
+
+/* keeps the svg scaling with the page */
+.responsive-svg-container {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+.responsive-svg-container svg { width: 100%; height: auto; }
+
+/* chart styling */
+.bar { fill: #339af0; }
+.bar:hover { fill: #e8590c; }
+.bar-label { font-size: 14px; text-anchor: middle; font-weight: 600; }
+.axis text { font-size: 14px; }
+.axis-label { font-size: 14px; text-anchor: middle; fill: #5b6675; }
+
+/* line chart */
+.line { fill: none; stroke: #e8590c; stroke-width: 2.5; }
+.dot { fill: #e8590c; }
+.dot:hover { fill: #1c2430; }
