@@ -1,0 +1,826 @@
+/* =========================================
+   DESIGN TOKENS
+   Add to your HTML <head>:
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+========================================= */
+
+:root {
+    /* Screen / bezel darks */
+    --screen-black: #12141a;
+    --panel-dark: #1c1f26;
+
+    /* Cool paper, not cream — this is glass, not parchment */
+    --paper: #e9ebee;
+    --paper-raised: #ffffff;
+
+    --ink: #12141a;
+    --ink-soft: #4a4f58;
+
+    /* Energy-label gold, efficiency teal, high-consumption coral */
+    --amber: #f5a623;
+    --amber-dim: #c9860f;
+    --teal: #17a398;
+    --teal-dim: #0f7d74;
+    --coral: #e4572e;
+
+    --display-font: "Big Shoulders Display", "Arial Narrow", sans-serif;
+    --body-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --readout-font: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+
+/* =========================================
+   GENERAL SETTINGS
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    background-color: var(--paper);
+    color: var(--ink);
+}
+
+h1, h2, h3 {
+    font-family: var(--display-font);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 1.05;
+}
+
+
+/* =========================================
+   NAVIGATION — the bezel above the screen
+========================================= */
+
+.navbar {
+    background-color: var(--screen-black);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 14px 8%;
+
+    border-bottom: 1px solid rgba(245, 166, 35, 0.25);
+}
+
+
+/* Logo */
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 3px;
+
+    transition: filter 0.25s ease;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 6px rgba(245, 166, 35, 0.6));
+}
+
+
+/* Navigation list */
+
+.nav-links {
+    display: flex;
+
+    list-style: none;
+
+    gap: 4px;
+}
+
+
+/* Navigation links */
+
+.nav-links a {
+    display: block;
+
+    padding: 8px 16px;
+
+    text-decoration: none;
+
+    color: #cfd3da;
+
+    font-family: var(--body-font);
+    font-weight: 600;
+    font-size: 0.95rem;
+
+    border-bottom: 2px solid transparent;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* Hover */
+
+.nav-links a:hover {
+    color: #ffffff;
+    border-bottom-color: var(--teal);
+}
+
+
+/* Active page */
+
+.nav-links a.active {
+    color: var(--amber);
+    border-bottom-color: var(--amber);
+}
+
+
+/* =========================================
+   HERO — the glowing screen inside the bezel
+========================================= */
+
+.hero {
+    background-color: var(--screen-black);
+    padding: 0 8% 70px;
+}
+
+.hero-content {
+    max-width: 720px;
+    margin: 0 auto;
+
+    padding: 80px 48px;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(245, 166, 35, 0.14),
+            transparent 55%
+        ),
+        var(--panel-dark);
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-left: 4px solid var(--amber);
+}
+
+.hero h1 {
+    font-size: 3.4rem;
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-family: var(--body-font);
+    font-size: 1.15rem;
+    color: #b9bec7;
+    max-width: 52ch;
+    margin-bottom: 32px;
+}
+
+
+/* =========================================
+   BUTTON — modeled on a remote control key
+========================================= */
+
+.button {
+    display: inline-block;
+
+    background-color: var(--amber);
+
+    color: var(--screen-black);
+
+    padding: 13px 26px;
+
+    border: none;
+    border-radius: 4px;
+
+    text-decoration: none;
+
+    font-family: var(--body-font);
+    font-weight: 700;
+    font-size: 0.95rem;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease;
+}
+
+.button:hover {
+    background-color: #ffb84d;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.page-header {
+    text-align: left;
+
+    padding: 60px 8% 40px;
+
+    background-color: var(--paper);
+
+    border-bottom: 1px solid rgba(18, 20, 26, 0.08);
+}
+
+.page-header h1 {
+    font-size: 2.6rem;
+
+    color: var(--ink);
+
+    margin-bottom: 8px;
+
+    border-left: 5px solid var(--teal);
+    padding-left: 18px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.content-section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 60px 30px;
+}
+
+
+.content-section h2,
+.calculator-section h2,
+.faq-section h2,
+.data-story h2 {
+    font-size: 2.1rem;
+
+    margin-bottom: 22px;
+
+    color: var(--ink);
+
+    border-left: 5px solid var(--amber);
+    padding-left: 16px;
+}
+
+
+.content-section p {
+    margin-bottom: 15px;
+    max-width: 72ch;
+    color: var(--ink-soft);
+}
+
+
+/* =========================================
+   CARDS — spec-sheet panels, not SaaS cards
+========================================= */
+
+.card-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 1px;
+
+    margin-top: 30px;
+
+    background-color: rgba(18, 20, 26, 0.1);
+}
+
+
+.card {
+    background-color: var(--paper-raised);
+
+    padding: 28px 25px;
+
+    border-left: 4px solid var(--teal);
+}
+
+.card:nth-child(2) {
+    border-left-color: var(--amber);
+}
+
+.card:nth-child(3) {
+    border-left-color: var(--coral);
+}
+
+
+.card h3 {
+    margin-bottom: 10px;
+
+    font-size: 1.2rem;
+
+    color: var(--ink);
+}
+
+
+/* =========================================
+   CALCULATOR — the control panel
+========================================= */
+
+.calculator-section {
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 44px;
+
+    background-color: var(--screen-black);
+
+    border-radius: 6px;
+}
+
+.calculator-section h2 {
+    color: #ffffff;
+    border-left-color: var(--teal);
+}
+
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+    font-size: 0.9rem;
+
+    color: #b9bec7;
+}
+
+
+.form-group input {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #3a3f4a;
+    border-radius: 4px;
+
+    background-color: var(--panel-dark);
+    color: #ffffff;
+
+    font-family: var(--readout-font);
+    font-size: 1rem;
+}
+
+
+.form-group input:focus {
+    outline: none;
+
+    border-color: var(--amber);
+    box-shadow:
+        0 0 0 3px rgba(245, 166, 35, 0.2);
+}
+
+
+/* Results — the digital readout */
+
+.results {
+    margin-top: 30px;
+
+    padding: 26px;
+
+    background-color: var(--panel-dark);
+
+    border-left: 4px solid var(--teal);
+    border-radius: 4px;
+}
+
+
+.results h3 {
+    margin-bottom: 15px;
+
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--teal);
+}
+
+
+.results p {
+    margin-bottom: 8px;
+
+    font-family: var(--readout-font);
+    font-size: 1.35rem;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   FAQ
+========================================= */
+
+.faq-section {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 60px 30px;
+}
+
+
+.faq-item {
+    margin-bottom: 1px;
+
+    background-color: var(--paper-raised);
+
+    border-left: 3px solid transparent;
+
+    transition: border-color 0.2s ease;
+}
+
+.faq-item:hover {
+    border-left-color: var(--amber);
+}
+
+
+.faq-question {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 22px;
+
+    border: none;
+
+    background-color: transparent;
+
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: var(--ink);
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+
+.faq-question:hover {
+    background-color: rgba(23, 163, 152, 0.06);
+}
+
+
+.faq-answer {
+    display: none;
+
+    padding: 0 22px 20px;
+
+    color: var(--ink-soft);
+}
+
+
+.faq-answer.show {
+    display: block;
+}
+
+
+/* =========================================
+   DATA STORY
+========================================= */
+
+.data-story {
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    padding: 40px 30px;
+}
+
+
+.chart-placeholder {
+    min-height: 260px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: 25px;
+
+    border: 1px solid rgba(18, 20, 26, 0.15);
+    background-color: var(--paper-raised);
+
+    position: relative;
+}
+
+.chart-placeholder::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--amber);
+}
+
+.chart-placeholder p {
+    color: var(--ink-soft);
+    font-family: var(--readout-font);
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   LISTS
+========================================= */
+
+.tips-list {
+    margin-left: 0;
+    margin-top: 15px;
+
+    list-style: none;
+}
+
+
+.tips-list li {
+    margin-bottom: 12px;
+    padding-left: 22px;
+
+    position: relative;
+
+    color: var(--ink-soft);
+}
+
+.tips-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--teal);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: var(--screen-black);
+
+    color: #b9bec7;
+
+    text-align: left;
+
+    padding: 34px 8%;
+
+    margin-top: 50px;
+
+    border-top: 1px solid rgba(245, 166, 35, 0.25);
+}
+
+
+footer p {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .nav-links {
+        flex-direction: column;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .nav-links a {
+        width: 100%;
+    }
+
+
+    .hero-content {
+        padding: 50px 28px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .calculator-section {
+        margin: 20px;
+
+        padding: 25px;
+    }
+
+}
+
+/* =========================================
+   DATA STORY — CSS bar charts + storyboards
+   (Exercise 3)
+========================================= */
+
+.story-audience {
+    font-family: var(--readout-font);
+    font-size: 0.85rem;
+    color: var(--teal-dim);
+    margin-bottom: 18px;
+}
+
+.barchart {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.barchart-row {
+    display: grid;
+    grid-template-columns: 140px 1fr 70px;
+    align-items: center;
+    gap: 14px;
+}
+
+.barchart-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ink);
+    text-align: right;
+}
+
+.barchart-track {
+    background-color: rgba(18, 20, 26, 0.08);
+    border-radius: 3px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.barchart-fill {
+    height: 100%;
+    background-color: var(--coral);
+    border-radius: 3px 0 0 3px;
+}
+
+.barchart-fill.is-secondary {
+    background-color: var(--amber);
+}
+
+.barchart-fill.is-tertiary {
+    background-color: var(--teal);
+}
+
+.barchart-fill.is-muted {
+    background-color: #9aa0ab;
+}
+
+.barchart-value {
+    font-family: var(--readout-font);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    text-align: right;
+}
+
+.data-callout {
+    margin-top: 20px;
+    padding: 18px 22px;
+
+    background-color: var(--paper-raised);
+    border-left: 4px solid var(--coral);
+
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+}
+
+.data-callout strong {
+    color: var(--ink);
+}
+
+.data-callout.is-sage {
+    border-left-color: var(--teal);
+}
+
+.data-source-note {
+    margin-top: 28px;
+    padding: 16px 20px;
+
+    background-color: rgba(18, 20, 26, 0.04);
+    border-left: 3px solid var(--amber-dim);
+
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+}
+
+/* Storyboard - six-card narrative grid */
+
+.storyboard-label {
+    margin-top: 32px;
+    margin-bottom: 10px;
+
+    font-family: var(--readout-font);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+}
+
+.storyboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.story-card {
+    background-color: var(--paper-raised);
+    padding: 20px;
+    border-left: 4px solid var(--coral);
+}
+
+.story-card.is-sage {
+    border-left-color: var(--teal);
+}
+
+.story-card.is-gold {
+    border-left-color: var(--amber);
+}
+
+.story-step {
+    display: block;
+    margin-bottom: 8px;
+
+    font-family: var(--readout-font);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink);
+
+    border-bottom: 2px solid rgba(18, 20, 26, 0.1);
+    padding-bottom: 6px;
+}
+
+.story-card p {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+}
+
+.data-story-block {
+    margin-bottom: 60px;
+}
+
+.data-story-block:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .barchart-row {
+        grid-template-columns: 90px 1fr 55px;
+        gap: 8px;
+    }
+
+    .barchart-label {
+        font-size: 0.8rem;
+    }
+
+    .storyboard {
+        grid-template-columns: 1fr;
+    }
+
+}

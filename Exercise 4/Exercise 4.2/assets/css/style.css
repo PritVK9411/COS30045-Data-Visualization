@@ -1,12 +1,5 @@
-/* =========================================
-   DESIGN TOKENS
-   Add to your HTML <head>:
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-========================================= */
-
 :root {
-    /* Screen / bezel darks */
+    /* Screen bezel darks */
     --screen-black: #12141a;
     --panel-dark: #1c1f26;
 
@@ -30,9 +23,7 @@
 }
 
 
-/* =========================================
-   GENERAL SETTINGS
-========================================= */
+/* GENERAL SETTINGS */
 
 * {
     box-sizing: border-box;
@@ -55,9 +46,7 @@ h1, h2, h3 {
 }
 
 
-/* =========================================
-   NAVIGATION — the bezel above the screen
-========================================= */
+/* NAVIGATION — the bezel above the screen */
 
 .navbar {
     background-color: var(--screen-black);
@@ -143,10 +132,7 @@ h1, h2, h3 {
 }
 
 
-/* =========================================
-   HERO — the glowing screen inside the bezel
-========================================= */
-
+/* HERO — the glowing screen inside the bezel */
 .hero {
     background-color: var(--screen-black);
     padding: 0 8% 70px;
@@ -185,9 +171,7 @@ h1, h2, h3 {
 }
 
 
-/* =========================================
-   BUTTON — modeled on a remote control key
-========================================= */
+/* BUTTON — modeled on a remote control key */
 
 .button {
     display: inline-block;
@@ -223,9 +207,7 @@ h1, h2, h3 {
 }
 
 
-/* =========================================
-   PAGE HEADER
-========================================= */
+/* PAGE HEADER */
 
 .page-header {
     text-align: left;
@@ -249,9 +231,7 @@ h1, h2, h3 {
 }
 
 
-/* =========================================
-   CONTENT
-========================================= */
+/* CONTENT */
 
 .content-section {
     max-width: 1100px;
@@ -284,9 +264,7 @@ h1, h2, h3 {
 }
 
 
-/* =========================================
-   CARDS — spec-sheet panels, not SaaS cards
-========================================= */
+/* CARDS — spec-sheet panels, not SaaS cards */
 
 .card-container {
     display: grid;

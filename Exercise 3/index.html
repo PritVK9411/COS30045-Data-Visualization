@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Appliance Energy Consumption</title>
+  <meta name="description" content="Understand how much energy Australian household appliances use, and estimate your own running costs." />
+
+  <link rel="icon" href="assets/img/PowerIcon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="site-header">
+    <nav class="nav-bar" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <img src="assets/img/PowerIcon.png" alt="Appliance Energy Consumption logo" />
+        <span class="brand-text">Appliance Energy<span>Australian Market</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="televisions.html">Televisions</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Household Energy · Australia</span>
+        <h1>Know what your appliances are really costing you.</h1>
+        <p class="lead">
+          Placeholder overview: Australian households run a growing number of
+          always-on and high-draw appliances — from televisions to reverse-cycle
+          air conditioners — and electricity prices vary widely between states.
+          This site breaks down typical appliance wattages, running costs, and
+          simple ways to read your own energy bill.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="televisions.html">See TV energy data</a>
+          <a class="btn btn-ghost" href="#faq">Read the FAQ</a>
+        </div>
+      </div>
+      <div>
+        <div class="hero-mark" aria-hidden="true">
+          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="34" stroke="#C1502E" stroke-width="3" />
+            <g stroke="#C98A22" stroke-width="4" stroke-linecap="round">
+              <line x1="100" y1="20" x2="100" y2="46" />
+              <line x1="100" y1="154" x2="100" y2="180" />
+              <line x1="20" y1="100" x2="46" y2="100" />
+              <line x1="154" y1="100" x2="180" y2="100" />
+              <line x1="41" y1="41" x2="59" y2="59" />
+              <line x1="141" y1="141" x2="159" y2="159" />
+              <line x1="159" y1="41" x2="141" y2="59" />
+              <line x1="59" y1="141" x2="41" y2="159" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Placeholder stats section ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Energy use at a glance</h2>
+        <p>
+          Placeholder figures used for demonstration purposes only —
+          replace with cited Australian Energy Market Operator (AEMO) or
+          Energy Made Easy data for a real submission.
+        </p>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-value"><span>29.9</span>c</span>
+          <p>Average residential electricity price per kWh, national placeholder figure.</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value"><span>4–8</span> kWh</span>
+          <p>Typical daily household consumption range across Australian states.</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value"><span>~10%</span></span>
+          <p>Estimated share of household electricity used by entertainment
+            appliances such as TVs and set-top boxes.</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value"><span>$1,400</span></span>
+          <p>Placeholder average annual electricity spend per household.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Data story: chart + storyboard, x2 ===== -->
+  <section class="section" id="data-story">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">The data story</span>
+        <h2>Two questions, two charts, two storyboards</h2>
+        <p>
+          Each story below starts with the chart, then shows the storyboard
+          used to plan how it is told to its audience. The data is a snapshot
+          of 4,724 televisions registered under Australia's Energy Rating
+          scheme.
+        </p>
+      </div>
+
+      <!-- Story 1 -->
+      <div class="story-block is-first">
+        <h3>1. Which TV brands actually dominate the market?</h3>
+        <p class="story-audience">Audience: retail buyers and sales floor staff deciding how to allocate stock and shelf space.</p>
+
+        <div class="barchart" role="img" aria-label="Bar chart of TV model share by brand: Samsung 24.3%, Kogan 17.5%, LG 15.0%, Hisense 5.8%, Eko 4.2%, Sylvox 2.9%, 71 other brands 30.3%.">
+          <div class="barchart-row"><span class="barchart-label">Samsung</span><div class="barchart-track"><div class="barchart-fill" style="width: 73%;"></div></div><span class="barchart-value">24.3%</span></div>
+          <div class="barchart-row"><span class="barchart-label">Kogan</span><div class="barchart-track"><div class="barchart-fill" style="width: 53%;"></div></div><span class="barchart-value">17.5%</span></div>
+          <div class="barchart-row"><span class="barchart-label">LG</span><div class="barchart-track"><div class="barchart-fill" style="width: 45%;"></div></div><span class="barchart-value">15.0%</span></div>
+          <div class="barchart-row"><span class="barchart-label">Hisense</span><div class="barchart-track"><div class="barchart-fill is-secondary" style="width: 17%;"></div></div><span class="barchart-value">5.8%</span></div>
+          <div class="barchart-row"><span class="barchart-label">Eko</span><div class="barchart-track"><div class="barchart-fill is-secondary" style="width: 13%;"></div></div><span class="barchart-value">4.2%</span></div>
+          <div class="barchart-row"><span class="barchart-label">Sylvox</span><div class="barchart-track"><div class="barchart-fill is-secondary" style="width: 9%;"></div></div><span class="barchart-value">2.9%</span></div>
+          <div class="barchart-row"><span class="barchart-label">71 other brands</span><div class="barchart-track"><div class="barchart-fill is-muted" style="width: 100%;"></div></div><span class="barchart-value">30.3%</span></div>
+        </div>
+        <div class="data-callout">
+          <strong>Samsung, Kogan and LG</strong> account for 57% of every registered
+          model between them. Share of registered models, not units sold.
+        </div>
+
+        <div class="storyboard-label">Storyboard 1</div>
+        <div class="storyboard">
+          <div class="story-card"><span class="story-step">Issue</span><p>Buyers stock 76 TV brands on the floor, but no one knows which ones actual demand is concentrated in.</p></div>
+          <div class="story-card"><span class="story-step">Demonstrate issue</span><p>Show a bar chart of registered models by brand: Samsung, Kogan and LG tower over the rest.</p></div>
+          <div class="story-card"><span class="story-step">Ideas for overcoming issue</span><p>Build a 3-tier stocking guide so buyers weight floor space by real demand, not brand count.</p></div>
+          <div class="story-card is-sage"><span class="story-step">Describe the tiering</span><p>Tier 1: Samsung, Kogan, LG (leaders). Tier 2: Hisense, Eko (challengers). Tier 3: 71 niche brands (long tail).</p></div>
+          <div class="story-card is-sage"><span class="story-step">Show the split to prove it</span><p>Top 3 brands = <strong>57%</strong> of all models. Top 5 = <strong>67%</strong>. The other 71 brands share the last third.</p></div>
+          <div class="story-card is-gold"><span class="story-step">Recommendation</span><p>Give Samsung, Kogan and LG the most shelf space and promo budget; keep an eye on Hisense as a rising Tier 2 brand.</p></div>
+        </div>
+      </div>
+
+      <!-- Story 2 -->
+      <div class="story-block">
+        <h3>2. Do bigger screens really cost more to run?</h3>
+        <p class="story-audience">Audience: shoppers weighing up screen size, and sales staff advising them at point of sale.</p>
+
+        <div class="barchart" role="img" aria-label="Bar chart of average yearly energy use by screen size: small under 50 inches 64 kWh, medium 50 to 70 inches 84 kWh, large over 70 inches 462 kWh.">
+          <div class="barchart-row"><span class="barchart-label">Small (&lt;50")</span><div class="barchart-track"><div class="barchart-fill is-tertiary" style="width: 14%;"></div></div><span class="barchart-value">64 kWh/yr</span></div>
+          <div class="barchart-row"><span class="barchart-label">Medium (50–70")</span><div class="barchart-track"><div class="barchart-fill is-tertiary" style="width: 18%;"></div></div><span class="barchart-value">84 kWh/yr</span></div>
+          <div class="barchart-row"><span class="barchart-label">Large (&gt;70")</span><div class="barchart-track"><div class="barchart-fill" style="width: 100%;"></div></div><span class="barchart-value">462 kWh/yr</span></div>
+        </div>
+        <div class="data-callout is-sage">
+          A large screen uses roughly <strong>7×</strong> the energy of a small one
+          each year. Screen size and energy use are strongly correlated
+          (r&nbsp;=&nbsp;0.86). Explore more on the <a href="televisions.html">Televisions page</a>.
+        </div>
+
+        <div class="storyboard-label">Storyboard 2</div>
+        <div class="storyboard">
+          <div class="story-card"><span class="story-step">Issue</span><p>Shoppers chase bigger screens as the "upgrade", without realising what it costs to run every year.</p></div>
+          <div class="story-card"><span class="story-step">Demonstrate issue</span><p>Show a scatter plot of screen size vs yearly energy use: a clear upward climb, not a flat line.</p></div>
+          <div class="story-card"><span class="story-step">Ideas for overcoming issue</span><p>Give sales staff a simple size-vs-cost guide to hand to shoppers at the point of sale.</p></div>
+          <div class="story-card is-sage"><span class="story-step">Describe the guide</span><p>Group TVs into Small, Medium and Large bands so the cost jump is easy to point to on the floor.</p></div>
+          <div class="story-card is-sage"><span class="story-step">Show the numbers to prove it</span><p>Large TVs (70in+) average <strong>462 kWh</strong> a year, about <strong>7x</strong> the ~64 kWh a small TV uses.</p></div>
+          <div class="story-card is-gold"><span class="story-step">Recommendation</span><p>Put star ratings front and centre on large screens, and steer size-conscious buyers to the most efficient large models.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ Accordion ===== -->
+  <section class="section" id="faq">
+    <div class="container two-col">
+      <div>
+        <div class="section-heading">
+          <h2>Frequently asked questions</h2>
+          <p>Click a question to reveal the answer. Click it again to hide it.</p>
+        </div>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" id="faq-q-1">
+            Why do electricity prices differ across Australian states?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-q-1">
+            <p>
+              Placeholder answer: pricing differs due to network costs, retailer
+              margins, generation mix, and state-based regulation. This is
+              placeholder text and should be replaced with sourced content.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-q-2">
+            How is a kilowatt-hour (kWh) actually measured?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-q-2">
+            <p>
+              Placeholder answer: a kWh is the energy used by a 1,000 watt
+              appliance running for one hour. Your electricity meter totals
+              this continuously and your retailer bills you per kWh consumed.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-q-3">
+            Do standby appliances still use electricity?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-q-3">
+            <p>
+              Placeholder answer: yes — many appliances, including televisions,
+              draw a small "standby" load even when switched off at the remote.
+              Switching off at the wall can reduce this.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-q-4">
+            Where can I try the energy calculator?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-q-4">
+            <p>
+              The interactive Appliance Energy Calculator is on the
+              <a href="televisions.html">Televisions</a> page, where you can pick
+              a TV model or enter your own wattage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span data-current-year>2026</span> Your Name</span>
+      <span class="genai-note">
+        Portions of this site's code and placeholder copy were drafted with the
+        assistance of Generative AI (Claude, Anthropic) and reviewed/edited by
+        the author.
+      </span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

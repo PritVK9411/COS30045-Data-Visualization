@@ -1,0 +1,37 @@
+/* Styling for the charts (shared by the histogram and, in 6.2, the second chart) */
+
+.chart-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 24px auto 0;
+}
+
+.chart-container svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #e9ebee;   /* matches bodyBackgroundColor in shared-constants.js */
+}
+
+/* Axis text and lines */
+.axis text {
+  font-size: 12px;
+  fill: #4a4f58;
+}
+
+.axis line,
+.axis path {
+  stroke: #4a4f58;
+}
+
+.axis-label {
+  font-size: 14px;
+  font-weight: 600;
+  fill: #12141a;
+}
+
+.chart-note {
+  max-width: 72ch;
+  margin: 18px auto 0;
+  color: #4a4f58;
+}

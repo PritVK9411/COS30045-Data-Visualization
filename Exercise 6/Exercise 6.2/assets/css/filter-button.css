@@ -1,0 +1,68 @@
+    /* =========================================
+   FILTER BUTTONS (Exercise 6.2)
+   Add at the bottom of base.css, OUTSIDE the @media block
+========================================= */
+
+:root {
+    --turquoise-dark: #0e6f73;
+    --turquoise-darker: #0a565a;
+    --turquoise-light: #8fe3dc;
+}
+
+#filters_screen,
+#filters_size {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 900px;
+    margin: 24px auto 0;
+}
+
+#filters_screen .filter,
+#filters_size .filter {
+    min-width: 130px;
+    padding: 16px 36px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: var(--turquoise-dark);
+    color: #ffffff;
+
+    font-family: var(--body-font);
+    font-weight: 700;
+    font-size: 1.15rem;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.15s ease;
+}
+
+#filters_screen .filter:hover,
+#filters_size .filter:hover {
+    background-color: var(--turquoise-darker);
+}
+
+#filters_screen .filter:active,
+#filters_size .filter:active {
+    transform: scale(0.97);
+}
+
+/* Selected button: lighter turquoise */
+#filters_screen .filter.active,
+#filters_size .filter.active {
+    background-color: var(--turquoise-light);
+    color: var(--screen-black);
+}
+
+@media screen and (max-width: 768px) {
+    #filters_screen .filter,
+    #filters_size .filter {
+        min-width: 0;
+        flex: 1 1 40%;
+        padding: 14px 20px;
+    }
+}

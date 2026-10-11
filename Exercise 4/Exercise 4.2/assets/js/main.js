@@ -11,8 +11,7 @@ d3.select(".page-header p")
   .style("font-style", "italic");
 
 // ----- Step 3: append an element to a <div> -----
-// d3.select("div") would grab the FIRST div on this page, which is the
-// card container, so we select our practice div by its class instead.
+// d3.select("div") would grab the FIRST div on this page, which is the card container, so we select our practice div by its class instead.
 d3.select("div.container")
   .append("p")
     .text("Purchasing a low energy consumption TV will help with your energy bills!");
