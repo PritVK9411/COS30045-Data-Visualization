@@ -132,20 +132,27 @@
         </section>
 
 
-        <!-- Data Story Placeholder -->
+        <!-- Data Story: vertical bar chart (Exercise 5.1) -->
         <section class="data-story">
 
             <h2>TV Energy Data Story</h2>
 
             <p>
-                Explore how many television models each brand has
-                on sale in Australia.
+                Which type of TV screen uses the most electricity? Screen
+                size affects energy use, so to compare screen types fairly
+                the chart below only includes 55 inch TVs, the most common
+                size. Each bar shows the average labelled energy consumption
+                for that screen type.
             </p>
 
-            <!-- D3 draws the chart inside this container (Exercise 4.3+) -->
-            <div class="responsive-svg-container"></div>
+            <!-- D3 draws the bar chart in here -->
+            <div id="bar-chart" class="responsive-svg-container"></div>
 
-            <p id="dataStatus" class="chart-note">Loading data...</p>
+            <p class="chart-note">
+                Among 55 inch TVs the differences are modest: LED models average
+                about 369 kWh a year, OLED about 362 kWh and older LCD models
+                about 335 kWh.
+            </p>
 
         </section>
 
@@ -201,9 +208,9 @@
 
     <script src="assets/js/script.js"></script>
 
-    <!-- D3 library first, then our D3 code -->
+    <!-- D3 first, then the chart script -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/barChart.js"></script>
 
 </body>
 </html>

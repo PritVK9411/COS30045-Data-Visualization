@@ -132,23 +132,54 @@
         </section>
 
 
-        <!-- Data Story Placeholder -->
+        <!-- Data Story: vertical bar chart (Exercise 5.1) -->
         <section class="data-story">
 
             <h2>TV Energy Data Story</h2>
 
             <p>
-                This section can be expanded for Exercise 3 to present
-                visualisations of the TV energy consumption dataset.
+                Which type of TV screen uses the most electricity? Screen
+                size affects energy use, so to compare screen types fairly
+                the chart below only includes 55 inch TVs, the most common
+                size. Each bar shows the average labelled energy consumption
+                for that screen type.
             </p>
 
-            <div class="chart-placeholder">
+            <!-- D3 draws the bar chart in here -->
+            <div id="bar-chart" class="responsive-svg-container"></div>
 
-                <p>
-                    Visualisation will be displayed here.
-                </p>
+            <p class="chart-note">
+                Among 55 inch TVs the differences are modest: LED models average
+                about 369 kWh a year, OLED about 362 kWh and older LCD models
+                about 335 kWh.
+            </p>
 
-            </div>
+        </section>
+
+
+        <!-- Line chart (Exercise 5.2) -->
+        <section class="data-story">
+
+            <h2>What Does Electricity Cost?</h2>
+
+            <p>
+                What a TV costs to run depends on its energy use and on the
+                price of electricity. The chart below shows the average
+                wholesale spot price of electricity in Australia from 1998
+                to 2024. Each dot is one year and the line joins them up, so
+                you can see how the price has moved over time.
+            </p>
+
+            <!-- D3 draws the line chart in here -->
+            <div id="line-chart" class="responsive-svg-container"></div>
+
+            <p class="chart-note">
+                The spot price is the wholesale price paid for electricity
+                before retailers add network and other charges, so it is not
+                the same as the rate on a household bill. The average covers
+                the mainland states only, because Snowy and Tasmania do not
+                have data for the full period.
+            </p>
 
         </section>
 
@@ -203,6 +234,11 @@
 
 
     <script src="assets/js/script.js"></script>
+
+    <!-- D3 first, then the chart script -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="assets/js/barChart.js"></script>
+    <script src="assets/js/lineChart.js"></script>
 
 </body>
 </html>
